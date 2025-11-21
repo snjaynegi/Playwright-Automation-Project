@@ -64,7 +64,7 @@ import { Page } from "@playwright/test";
     async addToCartLaptopPro() {
         await this.addToCart_laptopPro.click();
     }
-## Config File
+** Config File **
 ```ts
 import { defineConfig, devices } from '@playwright/test';
 
@@ -93,5 +93,5 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
   ],
-});
+});```
 
