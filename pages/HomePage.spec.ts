@@ -23,16 +23,16 @@ export class Homepage{
         this.cart = page.getByRole('button').filter({ hasText: /^$/ });
         this.laptopPro = page.getByText("Laptop Pro");
         this.addToCart_laptopPro = page.getByRole('button', { name: 'Add to Cart' }).first(); 
-        this.WirelessMouse = page.getByText("Wireless Mouse").nth(1);
+        this.WirelessMouse = page.getByText("Wireless Mouse");
         this.addToCart_WirelessMouse = page.getByRole('button', { name: 'Add to Cart' }).nth(1);
-        this.KeyboardRGB = page.getByText("Keyboard RGB").nth(2);
+        this.KeyboardRGB = page.getByText("Keyboard RGB");
         this.addToCart_KeyboardRGB = page.getByRole('button', { name: 'Add to Cart' }).nth(2);
-        this.HeadphonesNoiseCancelling = page.getByText("Headphones Noise Cancelling").nth(3);
+        this.HeadphonesNoiseCancelling = page.getByText("Headphones Noise Cancelling");
         this.addToCart_HeadphonesNoiseCancelling= page.getByRole('button', { name: 'Add to Cart' }).nth(3);
         this.quantity_laptopPro= page.locator('#quantity-1').first();
-        this.quantity_WirelessMouse= page.locator('#quantity-1').nth(1);
-        this.quantity_KeyboardRGB = page.locator('#quantity-1').nth(2);
-        this.quantity_HeadphonesNoiseCancelling = page.locator('#quantity-1').nth(3);
+        this.quantity_WirelessMouse= page.locator('#quantity-2');
+        this.quantity_KeyboardRGB = page.locator('#quantity-3');
+        this.quantity_HeadphonesNoiseCancelling = page.locator('#quantity-4');
     }
 
     async searchAction(item:string) {
