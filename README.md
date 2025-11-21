@@ -3,8 +3,6 @@
 This repository contains an automated end-to-end (E2E) testing framework built using **Microsoft Playwright**.  
 It is designed for fast, reliable, cross-browser testing with clean architecture and maintainable test code.
 
----
-
 ## 📚 Table of Contents
 - [Features](#-features)
 - [Project Structure](#-project-structure)
@@ -12,8 +10,6 @@ It is designed for fast, reliable, cross-browser testing with clean architecture
 - [Page Object Model Example](#-page-object-model-example)
 - [Configuration](#-configuration)
 - [GitHub Actions CI](#-github-actions-ci)
-
----
 
 ## 🚀 Features
 
@@ -26,8 +22,6 @@ It is designed for fast, reliable, cross-browser testing with clean architecture
 - Automatic waiting to reduce flakiness  
 - UI Mode for debugging  
 
----
-
 ## 📂 Project Structure
 
 project/
@@ -39,11 +33,9 @@ project/
 - package.json
 - README.md
 
----
 ## 📊 Reports
   ```npx playwright show-report```
 
----
 ## 🧱 Page Object Model Example
 ```ts
 import { defineConfig } from '@playwright/test';
@@ -61,4 +53,3 @@ export default defineConfig({
     ['html', { outputFolder: 'playwright-report' }]
   ],
 });
----
