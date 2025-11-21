@@ -31,10 +31,10 @@ It is designed for fast, reliable, cross-browser testing with clean architecture
 ## 📂 Project Structure
 
 project/
-├── tests/ # Test spec files
-├── pages/ # Page Object Model classes
-├── fixtures/ # Custom fixtures (optional)
-├── utils/ # Helper utilities
-├── playwright.config.ts # Playwright main configuration
-├── package.json
-└── README.md
+- tests/ # Test spec files
+- pages/ # Page Object Model classes
+- fixtures/ # Custom fixtures (optional)
+- utils/ # Helper utilities
+- playwright.config.ts # Playwright main configuration
+- package.json
+- README.md
