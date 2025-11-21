@@ -62,7 +62,7 @@ export default defineConfig({
 
 
 ## ⚙️ Playwright Config Example
-```import { defineConfig } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   timeout: 30000,
@@ -76,6 +76,6 @@ export default defineConfig({
   reporter: [
     ['html', { outputFolder: 'playwright-report' }]
   ],
-});```
+});
 
 
