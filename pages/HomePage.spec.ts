@@ -29,10 +29,10 @@ export class Homepage{
         this.addToCart_KeyboardRGB = page.getByRole('button', { name: 'Add to Cart' }).nth(2);
         this.HeadphonesNoiseCancelling = page.getByText("Headphones Noise Cancelling").nth(3);
         this.addToCart_HeadphonesNoiseCancelling= page.getByRole('button', { name: 'Add to Cart' }).nth(3);
-        this.quantity_laptopPro= page.locator('quantity-1').first();
-        this.quantity_WirelessMouse= page.locator('quantity-1').nth(1);
-        this.quantity_KeyboardRGB = page.locator('quantity-1').nth(2);
-        this.quantity_HeadphonesNoiseCancelling = page.locator('quantity-1').nth(2);
+        this.quantity_laptopPro= page.locator('#quantity-1').first();
+        this.quantity_WirelessMouse= page.locator('#quantity-1').nth(1);
+        this.quantity_KeyboardRGB = page.locator('#quantity-1').nth(2);
+        this.quantity_HeadphonesNoiseCancelling = page.locator('#quantity-1').nth(3);
     }
 
     async searchAction(item:string) {
@@ -57,5 +57,36 @@ export class Homepage{
 
     async addToCartHeadphonesNoiseCancelling() {
         await this.addToCart_HeadphonesNoiseCancelling.click();
+    }
+
+    async clickAddQuantityLaptopPro(){
+        await this.quantity_laptopPro.click();
+    }
+
+    async addQuantityLaptopPro(quantity:string) {
+        await this.quantity_laptopPro.fill(quantity);
+    }
+
+    async clickAddQuantityWirelessMouse() {
+        await this.quantity_WirelessMouse.click();
+    }
+
+    async addQuantityWirelessMouse(quantity:string) {
+        await this.quantity_WirelessMouse.fill(quantity);
+    }
+
+    async clickAddQuantityKeyboardRGB() {
+        await this.quantity_KeyboardRGB.click();
+    }
+
+    async addQuantityKeyboardRGB(quantity:string) {
+        await this.quantity_KeyboardRGB.fill(quantity);
+    }
+
+    async clickAddQuantityHeadphonesNoiseCancelling(){
+        await this.quantity_HeadphonesNoiseCancelling.click();
+    }
+    async addQuantityHeadphonesNoiseCancelling(quantity:string) {
+        await this.quantity_HeadphonesNoiseCancelling.fill(quantity);
     }
 }
