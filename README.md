@@ -39,9 +39,11 @@ project/
 - package.json
 - README.md
 
+---
 ## 📊 Reports
   ```npx playwright show-report```
 
+---
 ## 🧱 Page Object Model Example
 ```ts
 import { defineConfig } from '@playwright/test';
@@ -59,8 +61,8 @@ export default defineConfig({
     ['html', { outputFolder: 'playwright-report' }]
   ],
 });```
-
-⚙️ Playwright Config Example
+---
+## ⚙️ Playwright Config Example
 ```import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
