@@ -37,7 +37,7 @@ project/
   ```npx playwright show-report```
 
 ## 🧱 Page Object Model Example
-import { Page } from "@playwright/test";
+```import { Page } from "@playwright/test";
     export class Homepage{
     readonly page:Page;
     readonly search;
