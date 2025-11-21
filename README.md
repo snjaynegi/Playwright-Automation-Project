@@ -58,7 +58,7 @@ export default defineConfig({
   reporter: [
     ['html', { outputFolder: 'playwright-report' }]
   ],
-});
+});```
 
 
 ## ⚙️ Playwright Config Example
@@ -76,6 +76,6 @@ export default defineConfig({
   reporter: [
     ['html', { outputFolder: 'playwright-report' }]
   ],
-});
+});```
 
 
