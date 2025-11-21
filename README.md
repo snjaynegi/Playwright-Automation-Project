@@ -37,9 +37,8 @@ project/
   ```npx playwright show-report```
 
 ## 🧱 Page Object Model Example
-```import { Page } from "@playwright/test";
-
-```export class Homepage{
+import { Page } from "@playwright/test";
+    export class Homepage{
     readonly page:Page;
     readonly search;
     readonly cart;
@@ -47,25 +46,20 @@ project/
     readonly WirelessMouse;
     readonly KeyboardRGB;
     
-
     constructor(page:Page){
         this.page = page;
         this.search = page.getByRole('searchbox', { name: 'Search' });
         this.cart = page.getByRole('button').filter({ hasText: /^$/ });
         this.laptopPro = page.getByText("Laptop Pro");
         this.addToCart_laptopPro = page.getByRole('button', { name: 'Add to Cart' }).first(); 
-        this.WirelessMouse = page.getByText("Wireless Mouse").nth(1);
-        
+        this.WirelessMouse = page.getByText("Wireless Mouse").nth(1);    
     }
-
     async searchAction(item:string) {
        await this.search.fill(item);
     }
-
     async CartAction() {
        await this.cart.click();
     }
-
     async addToCartLaptopPro() {
         await this.addToCart_laptopPro.click();
-    }```
+    }
