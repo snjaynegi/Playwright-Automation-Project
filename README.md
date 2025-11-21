@@ -34,7 +34,8 @@ project/
 - README.md
 
 ## Reports
-  ```npx playwright show-report```
+```bash
+npx playwright show-report
 
 ## Page Object Model
 ```ts
@@ -64,7 +65,10 @@ import { Page } from "@playwright/test";
     async addToCartLaptopPro() {
         await this.addToCart_laptopPro.click();
     }
-Config File 
+
+
+## Config File
+```ts
 import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
