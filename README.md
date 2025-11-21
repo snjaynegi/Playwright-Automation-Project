@@ -40,7 +40,7 @@ project/
 - README.md
 
 ## 📊 Reports
-npx playwright show-report
+-- npx playwright show-report
 
 ## 🧱 Page Object Model Example
 import { Page } from '@playwright/test';
