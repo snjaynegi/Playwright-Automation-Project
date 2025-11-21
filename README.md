@@ -1,9 +1,9 @@
-# 🧪 Playwright Automation Project
+# Playwright Automation Project
 
 This repository contains an automated end-to-end (E2E) testing framework built using **Microsoft Playwright**.  
 It is designed for fast, reliable, cross-browser testing with clean architecture and maintainable test code.
 
-## 📚 Table of Contents
+## Table of Contents
 - [Features](#-features)
 - [Project Structure](#-project-structure)
 - [Reports](#-reports)
@@ -11,7 +11,7 @@ It is designed for fast, reliable, cross-browser testing with clean architecture
 - [Configuration](#-configuration)
 - [GitHub Actions CI](#-github-actions-ci)
 
-## 🚀 Features
+## Features
 
 - Cross-browser support: Chromium, Firefox, WebKit  
 - Parallel test execution  
@@ -22,7 +22,7 @@ It is designed for fast, reliable, cross-browser testing with clean architecture
 - Automatic waiting to reduce flakiness  
 - UI Mode for debugging  
 
-## 📂 Project Structure
+## Project Structure
 
 project/
 - tests/ # Test spec files
@@ -33,10 +33,10 @@ project/
 - package.json
 - README.md
 
-## 📊 Reports
+## Reports
   ```npx playwright show-report```
 
-## 🧱 Page Object Model Example
+## Page Object Model
 ```ts
 import { Page } from "@playwright/test";
     export class Homepage{
@@ -65,33 +65,6 @@ import { Page } from "@playwright/test";
         await this.addToCart_laptopPro.click();
     }
 
-## ⚙️ Playwright config file
-```ts
-import { defineConfig, devices } from '@playwright/test';
 
-export default defineConfig({
-  testDir: './tests',
-  fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
-  use: {
-    trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
-  },
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-  ],
-});
+
+## ⚙️ Playwright config file
