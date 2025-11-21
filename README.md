@@ -60,7 +60,6 @@ export default defineConfig({
   ],
 });```
 
-
 ## ⚙️ Playwright Config Example
 import { defineConfig } from '@playwright/test';
 
