@@ -37,7 +37,8 @@ project/
 ```npx playwright show-report```
 
 ## Page Object Model
-```tsimport { Page } from "@playwright/test";
+```ts
+import { Page } from "@playwright/test";
     export class Homepage{
     readonly page:Page;
     readonly search;
@@ -64,8 +65,9 @@ project/
         await this.addToCart_laptopPro.click();
     }
 
-## Config file
-```tsimport { defineConfig, devices } from '@playwright/test';
+# Config file
+```ts
+import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
